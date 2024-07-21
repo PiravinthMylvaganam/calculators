@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* Setzt die Standardmargen, -polsterungen und Schriftart auf Null für alle Elemente */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Definiert den Container für den Rechner.
+       Es nimmt den gesamten verfügbaren Platz im Browser ein und zentriert den Inhalt horizontal und vertikal */
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+    /* Stilisiert den Rechnerbereich mit Hintergrundfarbe, Innenpolstern und abgerundeten Ecken */
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    /* Stilisiert die Eingabefelder im Rechner.
+       Entfernt den Rand, setzt die Breite und Höhe fest, fügt einen Schatten hinzu und ändert die Farbe und den Cursor-Typ */
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    /* Stilisiert das Anzeigefeld im Rechner.
+       Setzt die Flex-Anzeige auf horizontal und rechtsbündige Ausrichtung mit oberem und unterem Abstand */
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    /* Stilisiert das Eingabefeld für die Anzeige im Rechner.
+       Setzt die rechtsbündige Textausrichtung, flexibles Wachstum und Schatten auf None */
+}
+
+form input.equal{
+    width: 145px;
+    /* Stilisiert die Gleichheits-Taste im Rechner und setzt ihre Breite */
+}
+
+form input.operator{
+    color: #33ffd8;
+    /* Stilisiert die Operator-Tasten im Rechner und ändert ihre Farbe */
+}

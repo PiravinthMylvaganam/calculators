@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="Taschenrechner.css"> <!-- verbindet html mit css  -->
+</head>
+<body>
+    <div class="container"> <!-- Container-Div für das Layout -->
+        <div class="calculator"> <!-- Div für den Taschenrechner Case -->
+            <form> <!-- Formular für den Taschenrechner -->
+                <div class="display"> <!-- Div für die Anzeige des Taschenrechners -->
+                        <input type="" name="display"> <!-- Eingabefeld für die Anzeige -->
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' " class="operator"> <!-- AC-Taste: Löscht den Inhalt des Anzeigefeldes -->
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator"> <!-- DE-Taste: Löscht das letzte Zeichen im Anzeigefeld -->
+                    <input type="button" value="." onclick="display.value += '.' " class="operator"> <!-- Punkt-Taste: Fügt einen Punkt zur Eingabe hinzu -->
+                    <input type="button" value="/" onclick="display.value += '/' " class="operator"> <!-- Teilen-Taste: Fügt das Teilen-Symbol zur Eingabe hinzu -->
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' "> <!-- Zahlentaste 7: Fügt die Zahl 7 zur Eingabe hinzu -->
+                    <input type="button" value="8" onclick="display.value += '8' "> <!-- Zahlentaste 8: Fügt die Zahl 8 zur Eingabe hinzu -->
+                    <input type="button" value="9" onclick="display.value += '9' "> <!-- Zahlentaste 9: Fügt die Zahl 9 zur Eingabe hinzu -->
+                    <input type="button" value="*" onclick="display.value += '*' " class="operator"> <!-- Multiplizieren-Taste: Fügt das Multiplizieren-Symbol zur Eingabe hinzu -->
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' "> <!-- Zahlentaste 4: Fügt die Zahl 4 zur Eingabe hinzu -->
+                    <input type="button" value="5" onclick="display.value += '5' "> <!-- Zahlentaste 5: Fügt die Zahl 5 zur Eingabe hinzu -->
+                    <input type="button" value="6" onclick="display.value += '6' "> <!-- Zahlentaste 6: Fügt die Zahl 6 zur Eingabe hinzu -->
+                    <input type="button" value="-" onclick="display.value += '-' " class="operator"> <!-- Subtrahieren-Taste: Fügt das Subtrahieren-Symbol zur Eingabe hinzu -->
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' "> <!-- Zahlentaste 1: Fügt die Zahl 1 zur Eingabe hinzu -->
+                    <input type="button" value="2" onclick="display.value += '2' "> <!-- Zahlentaste 2: Fügt die Zahl 2 zur Eingabe hinzu -->
+                    <input type="button" value="3" onclick="display.value += '3' "> <!-- Zahlentaste 3: Fügt die Zahl 3 zur Eingabe hinzu -->
+                    <input type="button" value="+" onclick="display.value += '+' " class="operator"> <!-- Addieren-Taste: Fügt das Addieren-Symbol zur Eingabe hinzu -->
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' "> <!-- Zahlentaste 00: Fügt die Zahl 00 zur Eingabe hinzu -->
+                    <input type="button" value="0" onclick="display.value += '0' "> <!-- Zahlentaste 0: Fügt die Zahl 0 zur Eingabe hinzu -->
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal"> <!-- Gleichheits-Taste: Berechnet das Ergebnis der Eingabe -->
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
